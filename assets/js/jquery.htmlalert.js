@@ -11,7 +11,8 @@ Options
         var defaults = {
             headerCaption: "Header",
             footerCaption: "Footer",
-            ButtonText: "Close"
+            ButtonText: "Close",
+            Text: "Hello World",
         };
         var opts = $.extend(true, {}, defaults, options);
         init();
@@ -30,7 +31,7 @@ Options
                 var $modal_header = $('<div />').appendTo($modal_content).addClass('modal-header');
                 var $headerCaption = $('<h2 />').appendTo($modal_header).text(opts.headerCaption);
                 //Content Section
-                var $modal_body = $('<div />').appendTo($modal_content).addClass('modal-body').html("adas das d asd as da sdasd");
+                var $modal_body = $('<div />').appendTo($modal_content).addClass('modal-body').html(Text);
 
                 //Footer Section
                 var $modal_footer = $('<div />').appendTo($modal_content).addClass('modal-footer');
