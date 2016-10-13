@@ -12,15 +12,16 @@ Options
             headerCaption: "Header",
             footerCaption: "Footer",
             ButtonText: "Close",
-            Text: "Hello World",
+            popupText: "Hello World"
 
         };
         var opts = $.extend(true, {}, defaults, options);
         init();
         return this.each(function(index, element) {
-            // $(element).bind("click.htmlalert", function() {
-            //     getContent(element);
-            // });
+            $(element).bind("click.htmlalert", function() {
+                containerCenter(element);
+                $('#htmlalert').show();
+            });
         });
 
         function init() {
@@ -32,13 +33,19 @@ Options
                 var $modal_header = $('<div />').appendTo($modal_content).addClass('modal-header');
                 var $headerCaption = $('<h2 />').appendTo($modal_header).text(opts.headerCaption);
                 //Content Section
-                var $modal_body = $('<div />').appendTo($modal_content).addClass('modal-body').html(Text);
+                var $modal_body = $('<div />').appendTo($modal_content).addClass('modal-body').html($.parseHTML(opts.popupText));
                 //Footer Section
                 var $modal_footer = $('<div />').appendTo($modal_content).addClass('modal-footer');
                 var $footerCaption = $('<h4 />').appendTo($modal_footer).text(opts.footerCaption);
                 var $modal_footer_controls = $('<div />').appendTo($modal_footer).addClass('modal-footer-controls');
-                var $modal_footer_controls_open = $('<button />').appendTo($modal_footer_controls).addClass('btn btn-default').text(opts.ButtonText).attr('id', "modal_footer_open");
-                containerCenter();
+                var $modal_footer_controls_open = $('<button />').appendTo($modal_footer_controls).addClass('btn btn-default').text(opts.ButtonText).attr('id', "modal_footer_button");
+
+                $(".modal-content #modal_footer_button").click(function() {
+                    $('#htmlalert').hide();
+                    $('body').removeClass('overlay');
+                });
+
+
             }
         }
 
@@ -47,12 +54,11 @@ Options
          * This function calculates and adjusts the screen position to center
          */
 
-        function containerCenter() {
+        function containerCenter(element) {
             $('#htmlalert').css("position", "absolute");
             $('body').addClass('overlay');
             $('#htmlalert').css("top", ($(window).height() / 2) - ($('#htmlalert').outerHeight() / 2));
             $('#htmlalert').css("left", ($(window).width() / 2) - ($('#htmlalert').outerWidth() / 2));
-            $('#htmlalert').show();
         }
     };
 }(jQuery));

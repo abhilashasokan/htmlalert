@@ -6,6 +6,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/htmlalert.css" />
     <link rel="stylesheet" media="screen" href="../assets/css/demo.css" />
 </head>
 
@@ -23,7 +24,12 @@
     <script type="text/javascript">
     $(function() {
         'use strict';
-        $('#default').htmlalert();
+        $('#default').htmlalert({
+            headerCaption: "Notification!",
+            footerCaption: "",
+            ButtonText: "Okay!",
+            popupText: "<h4>Security Considerations</h4><p>Most jQuery APIs that accept HTML strings will run scripts that are included in the HTML. </p>"
+        });
     });
     </script>
 </body>
