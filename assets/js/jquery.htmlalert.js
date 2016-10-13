@@ -13,6 +13,7 @@ Options
             footerCaption: "Footer",
             ButtonText: "Close",
             Text: "Hello World",
+
         };
         var opts = $.extend(true, {}, defaults, options);
         init();
@@ -32,7 +33,6 @@ Options
                 var $headerCaption = $('<h2 />').appendTo($modal_header).text(opts.headerCaption);
                 //Content Section
                 var $modal_body = $('<div />').appendTo($modal_content).addClass('modal-body').html(Text);
-
                 //Footer Section
                 var $modal_footer = $('<div />').appendTo($modal_content).addClass('modal-footer');
                 var $footerCaption = $('<h4 />').appendTo($modal_footer).text(opts.footerCaption);
