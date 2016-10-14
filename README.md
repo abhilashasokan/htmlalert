@@ -9,7 +9,7 @@ Show application messages as HTML alert
 
 <div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>.some-time-inputs<span class="pl-pds">'</span></span>).<span class="pl-en">htmlAlert</span>(options);</pre></div>
 
-<p>Include <code>bootstrap.min.css</code> ,<code>jquery.min.jsand</code> and <code>bootstrap.min.js</code> in your page.</p>
+<p>Include <code>bootstrap.min.css</code> ,<code>jquery.min.js</code> and <code>bootstrap.min.js</code> in your page.</p>
 
 <p><code>options</code> is an optional javascript object with parameters explained below.</p>
 
