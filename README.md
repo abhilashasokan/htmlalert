@@ -54,14 +54,13 @@ Show application messages as HTML alert
             <br> Override default theme of popup.
             <em>default: "default"</em>
         </p>
-        <p style="padding-left: 25px;">
-	            <ul>Other options available (follows bootstrap stylying cues)
-	            	<li style="margin-left: 40px;">primary</li>
-	            	<li style="margin-left: 40px;">success</li>
-	            	<li style="margin-left: 40px;">info</li>
-	            	<li style="margin-left: 40px;">warning</li>
-	            	<li style="margin-left: 40px;">danger</li>
-	            </ul>
-            </p>
+        <p>
+	       	Other options available (follows bootstrap stylying cues) <br>
+        	1. primary <br>
+        	2. success <br>
+        	3. info <br>
+        	4. warning <br>
+        	5. danger <br>
+        </p>
     </li>
 </ul>
