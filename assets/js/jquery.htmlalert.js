@@ -6,7 +6,7 @@ Options
 ==========================================*/
 (function($) {
     'use strict';
-    $.fn.htmlalert = function(options) {
+    $.fn.htmlAlert = function(options) {
         //true added to deep merge as we are using objects as options
         var defaults = {
             headerCaption: "Header",
