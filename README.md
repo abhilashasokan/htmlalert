@@ -39,7 +39,7 @@ Show application messages as HTML alert
         	<strong>popupText</strong>
             <br> Override default popup text.
             <em>default: "Hello World!"</em>
-        </p>
+        </p> 
     </li>
     <li>
         <p>
@@ -54,7 +54,7 @@ Show application messages as HTML alert
             <br> Override default theme of popup.
             <em>default: "default"</em>
             <p style="padding-left: 25px;">
-	            <ul>Other options available
+	            <ul>Other options available (follows bootstrap stylying cues)
 	            	<li style="margin-left: 40px;">primary</li>
 	            	<li style="margin-left: 40px;">success</li>
 	            	<li style="margin-left: 40px;">info</li>
