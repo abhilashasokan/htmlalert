@@ -29,7 +29,7 @@ Show application messages as HTML alert
     </li>
     <li>
         <p>
-        	<strong>footerCaption</strong>
+        	<strong>footerCaption</strong> 
             <br> Override default popup footer text.
             <em>default: "Footer"</em>
         </p>
@@ -53,7 +53,8 @@ Show application messages as HTML alert
         	<strong>themeName</strong>
             <br> Override default theme of popup.
             <em>default: "default"</em>
-            <p style="padding-left: 25px;">
+        </p>
+        <p style="padding-left: 25px;">
 	            <ul>Other options available (follows bootstrap stylying cues)
 	            	<li style="margin-left: 40px;">primary</li>
 	            	<li style="margin-left: 40px;">success</li>
@@ -62,6 +63,5 @@ Show application messages as HTML alert
 	            	<li style="margin-left: 40px;">danger</li>
 	            </ul>
             </p>
-        </p>
     </li>
 </ul>
