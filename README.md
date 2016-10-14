@@ -45,7 +45,7 @@ Show application messages as HTML alert
         <p>
         	<strong>buttonText</strong>
             <br> Override default button text in popup.
-            <em>default: "Close"</em>
+            <em>default: "Close"</em> 
         </p>
     </li>
     <li>
