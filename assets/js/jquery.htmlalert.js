@@ -12,7 +12,7 @@ Options
             headerCaption: "Header",
             footerCaption: "Footer",
             buttonText: "Close",
-            popupText: "Hello World",
+            popupText: "Hello World!",
             themeName: "default",
             overlayColor: "#CCCCCC",
             popupAnimation: "",
