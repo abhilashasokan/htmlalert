@@ -11,8 +11,11 @@ Options
         var defaults = {
             headerCaption: "Header",
             footerCaption: "Footer",
-            ButtonText: "Close",
-            popupText: "Hello World"
+            buttonText: "Close",
+            popupText: "Hello World",
+            themeName: "default",
+            overlayColor: "#CCCCCC",
+            popupAnimation: "",
 
         };
         var opts = $.extend(true, {}, defaults, options);
@@ -30,15 +33,15 @@ Options
                 var $htmlalert = $('<div />').appendTo('body').attr('id', 'htmlalert').addClass('modal').hide();
                 var $modal_content = $('<div />').appendTo($htmlalert).addClass('modal-content');
                 //Header Section
-                var $modal_header = $('<div />').appendTo($modal_content).addClass('modal-header');
+                var $modal_header = $('<div />').appendTo($modal_content).addClass('modal-header-' + opts.themeName);
                 var $headerCaption = $('<h2 />').appendTo($modal_header).text(opts.headerCaption);
                 //Content Section
-                var $modal_body = $('<div />').appendTo($modal_content).addClass('modal-body').html($.parseHTML(opts.popupText));
+                var $modal_body = $('<div />').appendTo($modal_content).addClass('modal-body-' + opts.themeName).html($.parseHTML(opts.popupText));
                 //Footer Section
-                var $modal_footer = $('<div />').appendTo($modal_content).addClass('modal-footer');
+                var $modal_footer = $('<div />').appendTo($modal_content).addClass('modal-footer-' + opts.themeName);
                 var $footerCaption = $('<h4 />').appendTo($modal_footer).text(opts.footerCaption);
                 var $modal_footer_controls = $('<div />').appendTo($modal_footer).addClass('modal-footer-controls');
-                var $modal_footer_controls_open = $('<button />').appendTo($modal_footer_controls).addClass('btn btn-default').text(opts.ButtonText).attr('id', "modal_footer_button");
+                var $modal_footer_controls_open = $('<button />').appendTo($modal_footer_controls).addClass('btn btn-default').text(opts.buttonText).attr('id', "modal_footer_button");
 
                 $(".modal-content #modal_footer_button").click(function() {
                     $('#htmlalert').hide();
@@ -56,7 +59,7 @@ Options
 
         function containerCenter(element) {
             $('#htmlalert').css("position", "absolute");
-            $('body').addClass('overlay');
+            $('body').addClass('overlay').css("background-color", opts.overlayColor);
             $('#htmlalert').css("top", ($(window).height() / 2) - ($('#htmlalert').outerHeight() / 2));
             $('#htmlalert').css("left", ($(window).width() / 2) - ($('#htmlalert').outerWidth() / 2));
         }

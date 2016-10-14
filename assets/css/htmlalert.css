@@ -1,0 +1,267 @@
+#htmlalert {
+    display: table;
+    width: 97%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100000;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+    /*min-height: 60%;*/
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 4px;
+}
+
+.modal-footer-controls {
+    text-align: right;
+}
+
+
+/* Add Animation */
+
+
+/*
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1 
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+*/
+
+
+/*Default Style*/
+
+.modal-header-default {
+    background: #f6f6f6 none repeat scroll 0 0;
+    border-bottom: 1px solid #dadada;
+    padding: 1px 0px 0px 15px;
+    margin-top: -10px;
+    position: relative;
+}
+
+
+/* Modal Body */
+
+.modal-body-default {
+    padding: 2px 16px;
+    display: table;
+    width: 98%;
+    color: #666666;
+}
+
+
+/* Modal Footer */
+
+.modal-footer-default {
+    background-color: #f6f6f6;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top: 1px solid #CCC;
+    padding: 10px 15px;
+    width: 100% min-height: 25px;
+    text-align: left;
+}
+
+
+/*primary Style*/
+
+.modal-header-primary {
+    background: #337ab7 none repeat scroll 0 0;
+    border-bottom: 1px solid #dadada;
+    padding: 1px 0px 0px 15px;
+    margin-top: -10px;
+    position: relative;
+    color: white;
+}
+
+
+/* Modal Body */
+
+.modal-body-primary {
+    padding: 2px 16px;
+    display: table;
+    width: 98%;
+    color: #666666;
+}
+
+
+/* Modal Footer */
+
+.modal-footer-primary {
+    background-color: #337ab7;
+    border-top: 1px solid #CCC;
+    padding: 10px 15px;
+    width: 100% min-height: 25px;
+    text-align: left;
+}
+
+
+/*success Style*/
+
+.modal-header-success {
+    background: #5cb85c none repeat scroll 0 0;
+    border-bottom: 1px solid #dadada;
+    padding: 1px 0px 0px 15px;
+    margin-top: -10px;
+    position: relative;
+    color: white;
+}
+
+
+/* Modal Body */
+
+.modal-body-success {
+    padding: 2px 16px;
+    display: table;
+    width: 98%;
+    color: #666666;
+}
+
+
+/* Modal Footer */
+
+.modal-footer-success {
+    background-color: #5cb85c;
+    border-top: 1px solid #CCC;
+    padding: 10px 15px;
+    width: 100% min-height: 25px;
+    text-align: left;
+}
+
+
+/*info Style*/
+
+.modal-header-info {
+    background: #5bc0de none repeat scroll 0 0;
+    border-bottom: 1px solid #5bc0de;
+    padding: 1px 0px 0px 15px;
+    margin-top: -10px;
+    position: relative;
+    color: white;
+}
+
+
+/* Modal Body */
+
+.modal-body-info {
+    padding: 2px 16px;
+    display: table;
+    width: 98%;
+    color: #666666;
+}
+
+
+/* Modal Footer */
+
+.modal-footer-info {
+    background-color: #5bc0de;
+    border-top: 1px solid #5bc0de;
+    padding: 10px 15px;
+    width: 100% min-height: 25px;
+    text-align: left;
+}
+
+
+/*warning Style*/
+
+.modal-header-warning {
+    background: #f0ad4e none repeat scroll 0 0;
+    border-bottom: 1px solid #f0ad4e;
+    padding: 1px 0px 0px 15px;
+    margin-top: -10px;
+    position: relative;
+    color: white;
+}
+
+
+/* Modal Body */
+
+.modal-body-warning {
+    padding: 2px 16px;
+    display: table;
+    width: 98%;
+    color: #666666;
+}
+
+
+/* Modal Footer */
+
+.modal-footer-warning {
+    background-color: #f0ad4e;
+    border-top: 1px solid #f0ad4e;
+    padding: 10px 15px;
+    width: 100% min-height: 25px;
+    text-align: left;
+}
+
+
+/*danger Style*/
+
+.modal-header-danger {
+    background: #d9534f none repeat scroll 0 0;
+    border-bottom: 1px solid #d9534f;
+    padding: 1px 0px 0px 15px;
+    margin-top: -10px;
+    position: relative;
+    color: white;
+}
+
+
+/* Modal Body */
+
+.modal-body-danger {
+    padding: 2px 16px;
+    display: table;
+    width: 98%;
+    color: #666666;
+}
+
+
+/* Modal Footer */
+
+.modal-footer-danger {
+    background-color: #d9534f;
+    border-top: 1px solid #d9534f;
+    padding: 10px 15px;
+    width: 100% min-height: 25px;
+    text-align: left;
+}
